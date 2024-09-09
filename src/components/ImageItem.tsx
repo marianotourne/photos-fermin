@@ -8,13 +8,13 @@ type ImageItemProps = {
 export const ImageItem: React.FC<ImageItemProps> = ({ image }) => {
   return (
     <div className="flex flex-col items-center justify-center m-8">
-      <div className="w-64 h-64 overflow-hidden  rounded-2xl">
+      <div className="w-64 h-64 overflow-hidden rounded-2xl">
         <img
           src={image.url}
           alt={image.description}
           className="w-full h-full object-cover object-center"
           onClick={() => {
-            console.log(`Clic en foto ${image.month}-${image.year}`);
+            alert(`${image.description} (${image.month}-${image.year})`);
           }}
         />
       </div>
