@@ -3,11 +3,13 @@ import React from "react";
 type FilterPanelProps = {
   onMonthChange: (month: number) => void;
   onYearChange: (year: number) => void;
+  onDescriptionChange: (description: string) => void;
 };
 
 export const FilterPanel: React.FC<FilterPanelProps> = ({
   onMonthChange,
   onYearChange,
+  onDescriptionChange,
 }) => {
   return (
     <div className="flex justify-center items-center mb-4">
@@ -32,6 +34,10 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
         <option value={2023}>2023</option>
         <option value={2024}>2024</option>
       </select>
+      <input
+        onChange={(e) => onDescriptionChange(e.target.value)}
+        placeholder="Ingrese busqueda"
+      ></input>
     </div>
   );
 };
