@@ -19,10 +19,10 @@ export const ImageItem: React.FC<ImageItemProps> = ({ image }) => {
         />
       </div>
       <div>
-        <span className="inline-flex items-center rounded-md bg-green-50 px-1.5 py-0.5 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
+        <span className="badge bg-green-50 text-green-700 ring-green-600/20">
           {image.month}
         </span>
-        <span className="inline-flex items-center rounded-md bg-blue-50 px-1.5 py-0.5 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
+        <span className="badge bg-blue-50 text-blue-700 ring-blue-700/10">
           {image.year}
         </span>
       </div>

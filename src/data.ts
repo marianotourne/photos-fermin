@@ -5,7 +5,6 @@ export interface Image {
     month: number;
     date: `${number}-${number}-${number}`;
     description: string;
-    // keywords: string[];
   }
 
 
@@ -34,4 +33,5 @@ export const images: Image[] = [
 { id: 22, url: 'https://lh3.googleusercontent.com/pw/AP1GczNqtyhJEGD-aGtXiattDmnlayi4Y_NognTbDDtVUQdwXq5_PY26Vk1RnnjY87uoTEXkJAVdkA653hIQ4v85_NM7wMqV2D3K5Bt5y02GMJWov4EyGTDcnDW0CBDzXDtX-TsSsYXOvQ4W3grF_4l6cWbctg=w1130-h1508-s-no-gm?authuser=0', year: 2024, month: 6, date:"2024-06-10", description:"Capitán del barco" },
 { id: 23, url: 'https://lh3.googleusercontent.com/pw/AP1GczMIl_lmOkUxwfSyJikz0NmwNGLDRTB74hIQVfcN57W7c-LLPJulEY9Z4HciK-cOClvDwBmAMPzm_9fRmgXeZyOXoxque62L52QjBNqrDdt9p6lkWCCU0UDj8P0CKqIkvavSbarFC6Epzg_L9vy3lBvMqw=w682-h912-s-no-gm?authuser=0', year: 2024, month: 7, date:"2024-07-16", description:"Relax" },
 { id: 24, url: 'https://lh3.googleusercontent.com/pw/AP1GczNIAEsSwSpu3EmJ1f4sR7DY6nKDtJ4Ne1uc6AIFFen8C8pR0cjeRGsXI-U5kNVLecCRh6Hy-FKXW3XkqgId76ne55_0LzQIE5Oed278H7mgXVxcAprFEpCDaMZRLrzzOfpK1DfjqFmeTlXBJgnxEI7m4g=w682-h912-s-no-gm?authuser=0', year: 2024, month: 8, date:"2024-08-13", description:"Pata pata en la plaza" },
+{ id: 25, url: 'https://lh3.googleusercontent.com/pw/AP1GczNOkNNtQu-igsPaQqyDYFSNkfksMwF_m9yWyMRj8Nmu0vPrEAz2N-S-Qm1VZSEtesKmAifFSnACLy7Nt1JT4OpeY1W39uEYofPzFt5p5aOEdg6E8w4rgoAoJiM4EqoKhzQD6LON8ASaZd364c4Lj9Ekdg=w1018-h1360-s-no-gm?authuser=0', year: 2024, month: 9, date:"2024-09-23", description:"Cumple en la plaza" },
 ];
