@@ -12,9 +12,9 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
   onDescriptionChange,
 }) => {
   return (
-    <div className="flex justify-center items-center mb-4">
+    <div className="flex justify-center items-center mb-4 flex-col md:flex-row w-full bg-blue-300">
       <select
-        className="m-2 border-2 border-gray-600 rounded-2xl p-4 bg-gray-200"
+        className="m-1 p-2 h-12 rounded-md border-2 border-gray-600 bg-gray-200"
         onChange={(e) => onMonthChange(parseInt(e.target.value))}
       >
         <option value={0}>Todos</option>
@@ -32,7 +32,7 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
         <option value={12}>Diciembre</option>
       </select>
       <select
-        className="m-2 border-2 border-gray-600 rounded-2xl p-4 bg-gray-200"
+        className="m-1 p-2 h-12 rounded-md border-2 border-gray-600 bg-gray-200"
         onChange={(e) => onYearChange(parseInt(e.target.value))}
       >
         <option value={0}>Todos</option>
@@ -43,7 +43,7 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
       <input
         onChange={(e) => onDescriptionChange(e.target.value)}
         placeholder="Ingrese busqueda"
-        className="m-2 border-2 border-gray-600 rounded-2xl p-4 bg-gray-200"
+        className="m-1 p-2 h-12 w-min rounded-md border-2 border-gray-600 bg-gray-200"
       ></input>
     </div>
   );
