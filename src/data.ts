@@ -56,3 +56,14 @@ export const months: Month[] = [
   {id:11, name:"Noviembre"},
   {id:12, name:"Diciembre"},
 ]
+export interface Year {
+  id: number;
+  year: string;
+}
+
+export const years: Year[] = [
+  {id: 0, year: "Todos"},
+  {id: 2022, year: "2022"},
+  {id: 2023, year: "2023"},
+  {id: 2024, year: "2024"},
+]
