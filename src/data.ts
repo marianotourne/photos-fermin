@@ -35,3 +35,35 @@ export const images: Image[] = [
 { id: 24, url: 'https://lh3.googleusercontent.com/pw/AP1GczNIAEsSwSpu3EmJ1f4sR7DY6nKDtJ4Ne1uc6AIFFen8C8pR0cjeRGsXI-U5kNVLecCRh6Hy-FKXW3XkqgId76ne55_0LzQIE5Oed278H7mgXVxcAprFEpCDaMZRLrzzOfpK1DfjqFmeTlXBJgnxEI7m4g=w682-h912-s-no-gm?authuser=0', year: 2024, month: 8, date:"2024-08-13", description:"Pata pata en la plaza" },
 { id: 25, url: 'https://lh3.googleusercontent.com/pw/AP1GczNOkNNtQu-igsPaQqyDYFSNkfksMwF_m9yWyMRj8Nmu0vPrEAz2N-S-Qm1VZSEtesKmAifFSnACLy7Nt1JT4OpeY1W39uEYofPzFt5p5aOEdg6E8w4rgoAoJiM4EqoKhzQD6LON8ASaZd364c4Lj9Ekdg=w1018-h1360-s-no-gm?authuser=0', year: 2024, month: 9, date:"2024-09-23", description:"Cumple en la plaza" },
 ];
+
+export interface Month {
+  id: number;
+  name: string;
+}
+
+export const months: Month[] = [
+  {id:0, name:"Todos"},
+  {id:1, name:"Enero"},
+  {id:2, name:"Febrero"},
+  {id:3, name:"Marzo"},
+  {id:4, name:"Abril"},
+  {id:5, name:"Mayo"},
+  {id:6, name:"Junio"},
+  {id:7, name:"Julio"},
+  {id:8, name:"Agosto"},
+  {id:9, name:"Septiembre"},
+  {id:10, name:"Octubre"},
+  {id:11, name:"Noviembre"},
+  {id:12, name:"Diciembre"},
+]
+export interface Year {
+  id: number;
+  year: string;
+}
+
+export const years: Year[] = [
+  {id: 0, year: "Todos"},
+  {id: 2022, year: "2022"},
+  {id: 2023, year: "2023"},
+  {id: 2024, year: "2024"},
+]
