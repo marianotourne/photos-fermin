@@ -25,7 +25,7 @@ const App: React.FC = () => {
       <FilterPanel
         onMonthChange={setMonth}
         onYearChange={setYear}
-        // onDescriptionChange={setDescription}
+        onDescriptionChange={setDescription}
       />
       <ImageGallery filteredImages={filteredImages} />
     </div>

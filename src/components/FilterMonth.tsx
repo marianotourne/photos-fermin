@@ -17,7 +17,6 @@ export const FilterMonth: React.FC<FilterPanelProps> = ({ onMonthChange }) => {
   const [selectedMonth, setSelectedMonth] = useState<Month>(months[0]);
 
   const handleMonthChange = (month: Month) => {
-    console.log("Selected month:", month);
     setSelectedMonth(month);
     onMonthChange(month.id);
   };
@@ -27,8 +26,8 @@ export const FilterMonth: React.FC<FilterPanelProps> = ({ onMonthChange }) => {
       <Label className="block text-sm font-medium leading-6 text-gray-900">
         Mes
       </Label>
-      <div className="relative mt-2">
-        <ListboxButton className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-300 sm:text-sm sm:leading-6">
+      <div className="relative mt-2 mb-4">
+        <ListboxButton className="filterSelect">
           <span className="block truncate">{selectedMonth.name}</span>
           <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
             <ChevronUpDownIcon
