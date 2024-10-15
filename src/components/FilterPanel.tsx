@@ -24,13 +24,13 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
 
   return (
     <>
-      <div className={`flex justify-end mx-2 ${isHidden ? "border-b-2" : ""}`}>
-        <button
+      <div className={`flex px-2 justify-end ${isHidden ? "border-b-2" : ""}`}>
+        <div
           onClick={handleClick}
-          className="p-1 text-md font-semibold leading-6 text-gray-900"
+          className="p-1 text-md font-semibold leading-6 cursor-pointer text-gray-900"
         >
           Filtrar &#9776;
-        </button>
+        </div>
       </div>
       {!isHidden ? (
         <div

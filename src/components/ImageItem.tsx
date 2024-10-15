@@ -1,4 +1,3 @@
-import React from "react";
 import { Image } from "../data";
 
 type ImageItemProps = {
@@ -13,17 +12,19 @@ export const ImageItem: React.FC<ImageItemProps> = ({ image }) => {
           src={image.url}
           alt={image.description}
           className="w-full h-full object-cover object-center"
-          onClick={() => {
-            alert(`${image.description} (${image.month}-${image.year})`);
-          }}
         />
       </div>
       <div>
-        <span className="badge bg-green-50 text-green-700 ring-green-600/20">
-          {image.month}
-        </span>
-        <span className="badge bg-blue-50 text-blue-700 ring-blue-700/10">
-          {image.year}
+        <div className="text-center">
+          <span className="badge bg-green-50 text-green-700 ring-green-600/20">
+            {image.month}
+          </span>
+          <span className="badge bg-blue-50 text-blue-700 ring-blue-700/10">
+            {image.year}
+          </span>
+        </div>
+        <span className="text-xs text-text-balance text-center text-gray-600">
+          {image.description}
         </span>
       </div>
     </div>

@@ -39,13 +39,13 @@ export const FilterYear: React.FC<FilterPanelProps> = ({ onYearChange }) => {
 
         <ListboxOptions
           transition
-          className="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none data-[closed]:data-[leave]:opacity-0 data-[leave]:transition data-[leave]:duration-100 data-[leave]:ease-in sm:text-sm"
+          className="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-sm shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none data-[closed]:data-[leave]:opacity-0 data-[leave]:transition data-[leave]:duration-100 data-[leave]:ease-in"
         >
           {years.map((year: Year) => (
             <ListboxOption
               key={year.id}
               value={year}
-              className="group relative cursor-default select-none py-2 pl-8 pr-4 text-gray-900 data-[focus]:bg-indigo-300 data-[focus]:text-white"
+              className="group relative cursor-default select-none py-2 pl-8 pr-4 text-sm text-gray-900 data-[focus]:bg-indigo-300 data-[focus]:text-white"
             >
               <span className="block truncate font-normal group-data-[selected]:font-semibold">
                 {year.year}

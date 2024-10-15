@@ -26,15 +26,15 @@ export const FilterDescription: React.FC<FilterPanelProps> = ({
         htmlFor="search"
         className="block text-sm font-medium leading-6 text-gray-900"
       >
-        Buscar
+        Descripción
       </label>
-      <div className="relative mt-2 mb-4 flex items-center ring-red-700">
+      <div className="relative mt-2 mb-4 flex items-center">
         <input
           id="search"
           name="search"
           type="text"
           placeholder="Ingrese su búsqueda"
-          className="relative w-full rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-300 sm:text-sm sm:leading-6"
+          className="relative w-full text-sm rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-300 sm:leading-6"
           value={description}
           onChange={handleInputChange}
         />
