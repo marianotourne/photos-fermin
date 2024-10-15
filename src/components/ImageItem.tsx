@@ -2,11 +2,15 @@ import { Image } from "../data";
 
 type ImageItemProps = {
   image: Image;
+  onClick: () => void;
 };
 
-export const ImageItem: React.FC<ImageItemProps> = ({ image }) => {
+export const ImageItem: React.FC<ImageItemProps> = ({ image, onClick }) => {
   return (
-    <div className="flex flex-col items-center justify-center m-8">
+    <div
+      className="flex flex-col items-center justify-center m-8"
+      onClick={onClick}
+    >
       <div className="w-64 h-64 overflow-hidden rounded-2xl">
         <img
           src={image.url}
@@ -23,7 +27,7 @@ export const ImageItem: React.FC<ImageItemProps> = ({ image }) => {
             {image.year}
           </span>
         </div>
-        <span className="text-xs text-text-balance text-center text-gray-600">
+        <span className="text-xs text-balance text-center text-gray-600">
           {image.description}
         </span>
       </div>
