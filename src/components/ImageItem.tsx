@@ -27,9 +27,9 @@ export const ImageItem: React.FC<ImageItemProps> = ({ image, onClick }) => {
             {image.year}
           </span>
         </div>
-        <span className="text-xs text-balance text-center text-gray-600">
+        <div className="text-xs text-balance pt-1 text-center text-gray-600">
           {image.description}
-        </span>
+        </div>
       </div>
     </div>
   );

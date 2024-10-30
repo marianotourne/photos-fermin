@@ -4,6 +4,7 @@ import { ImageGallery } from "./components/ImageGallery";
 import { FilterPanel } from "./components/FilterPanel";
 import { Header } from "./components/Header";
 import "./index.css";
+import Footer from "./Footer";
 
 const App: React.FC = () => {
   const [month, setMonth] = useState<number>(0);
@@ -20,7 +21,7 @@ const App: React.FC = () => {
   });
 
   return (
-    <div>
+    <>
       <Header />
       <FilterPanel
         onMonthChange={setMonth}
@@ -28,7 +29,9 @@ const App: React.FC = () => {
         onDescriptionChange={setDescription}
       />
       <ImageGallery filteredImages={filteredImages} />
-    </div>
+
+      <Footer />
+    </>
   );
 };
 
