@@ -35,6 +35,7 @@ export const images: Image[] = [
 { id: 24, url: 'https://lh3.googleusercontent.com/pw/AP1GczNIAEsSwSpu3EmJ1f4sR7DY6nKDtJ4Ne1uc6AIFFen8C8pR0cjeRGsXI-U5kNVLecCRh6Hy-FKXW3XkqgId76ne55_0LzQIE5Oed278H7mgXVxcAprFEpCDaMZRLrzzOfpK1DfjqFmeTlXBJgnxEI7m4g=w682-h912-s-no-gm?authuser=0', year: 2024, month: 8, date:"2024-08-13", description:"Pata pata en la plaza" },
 { id: 25, url: 'https://lh3.googleusercontent.com/pw/AP1GczNOkNNtQu-igsPaQqyDYFSNkfksMwF_m9yWyMRj8Nmu0vPrEAz2N-S-Qm1VZSEtesKmAifFSnACLy7Nt1JT4OpeY1W39uEYofPzFt5p5aOEdg6E8w4rgoAoJiM4EqoKhzQD6LON8ASaZd364c4Lj9Ekdg=w1018-h1360-s-no-gm?authuser=0', year: 2024, month: 9, date:"2024-09-23", description:"Cumple en la plaza" },
 { id: 26, url: 'https://lh3.googleusercontent.com/pw/AP1GczM5NujEHRXhcTale10RrOfejftQrU9eixz7f2js10h25SEvv80birC6OqnyM_W5QCOPIauDHRs_qmMd_58o85MbjBh8s2xzGmL1hr4DOykeGpwiRwbLaJ39Mp78l0vt22MwxVubBAy7aaoSEPJJAB7pzw=w1016-h1360-s-no-gm?authuser=0', year: 2024, month: 10, date:"2024-10-24", description:"Divertido?" },
+{ id: 27, url: 'https://lh3.googleusercontent.com/pw/AP1GczO_FzG3g9jNbmBI5gKxHVwtfVvNGrkSa03E7vZBiCKkeAY8Nc5mWdpuIAYM5jGPiPL0v8to0IQtuTI_qpzaGVYPKp__plz_FjFCRMmh9MaHpk3x6JpBrmMlnhQ3G_ZgcayT-YzLzPADQ7F4JE7HMPuNsA=w730-h978-s-no-gm?authuser=0', year: 2024, month: 11, date:"2024-11-04", description:"Modelando en la plaza del tanque" },
 ];
 
 export interface Month {
