@@ -21,14 +21,14 @@ export const FilterDescription: React.FC<FilterPanelProps> = ({
   };
 
   return (
-    <>
+    <div className="flex items-center md:w-2/3 ">
       <label
         htmlFor="search"
-        className="block text-sm font-medium leading-6 text-gray-900"
+        className="block text-sm font-medium leading-6 text-gray-900 pr-6"
       >
         Descripción
       </label>
-      <div className="relative mt-2 mb-4 flex items-center">
+      <div className="relative flex items-center w-full">
         <input
           id="search"
           name="search"
@@ -48,6 +48,6 @@ export const FilterDescription: React.FC<FilterPanelProps> = ({
           </kbd>
         </div>
       </div>
-    </>
+    </div>
   );
 };

@@ -11,7 +11,7 @@ export const ImageItem: React.FC<ImageItemProps> = ({ image, onClick }) => {
       className="flex flex-col items-center justify-center m-8"
       onClick={onClick}
     >
-      <div className="w-64 h-64 overflow-hidden rounded-2xl">
+      <div className="w-64 h-64 md:w-72 md:h-96 overflow-hidden rounded-2xl">
         <img
           src={image.url}
           alt={image.description}

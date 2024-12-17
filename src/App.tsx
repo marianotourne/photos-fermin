@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { images } from "./data";
 import { ImageGallery } from "./components/ImageGallery";
 import { FilterPanel } from "./components/FilterPanel";
-import { Header } from "./components/Header";
 import "./index.css";
 import Footer from "./Footer";
 
@@ -22,14 +21,12 @@ const App: React.FC = () => {
 
   return (
     <>
-      <Header />
       <FilterPanel
         onMonthChange={setMonth}
         onYearChange={setYear}
         onDescriptionChange={setDescription}
       />
       <ImageGallery filteredImages={filteredImages} />
-
       <Footer />
     </>
   );

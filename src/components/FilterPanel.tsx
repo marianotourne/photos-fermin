@@ -3,7 +3,7 @@
 import { FilterMonth } from "./FilterMonth";
 import { FilterYear } from "./FilterYear";
 import { FilterDescription } from "./FilterDescription";
-import { useState } from "react";
+import { Header } from "./Header";
 
 type FilterPanelProps = {
   onMonthChange: (month: number) => void;
@@ -16,34 +16,14 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
   onYearChange,
   onDescriptionChange,
 }) => {
-  const [isHidden, setIsHidden] = useState<boolean>(true);
-
-  const handleClick = () => {
-    setIsHidden(!isHidden);
-  };
-
   return (
-    <>
-      <div className={`flex px-2 justify-end ${isHidden ? "border-b-2" : ""}`}>
-        <div
-          onClick={handleClick}
-          className="p-1 text-md font-semibold leading-6 cursor-pointer text-gray-900"
-        >
-          Filtrar &#9776;
-        </div>
+    <div className="sticky top-0">
+      <Header />
+      <div className="flex flex-col md:justify-between md:flex-row align-center bg-slate-200 py-5 px-5 gap-2">
+        <FilterMonth onMonthChange={onMonthChange} />
+        <FilterYear onYearChange={onYearChange} />
+        <FilterDescription onDescriptionChange={onDescriptionChange} />
       </div>
-      {!isHidden ? (
-        <div
-          className={`flex flex-col justify-right align-center bg-slate-200 px-5 ${
-            isHidden ? "h-8" : "block"
-          }`}
-        >
-          <FilterMonth onMonthChange={onMonthChange} />
-          <FilterYear onYearChange={onYearChange} />
-          <FilterDescription onDescriptionChange={onDescriptionChange} />
-        </div>
-      ) : null}
-    </>
-    // </div>
+    </div>
   );
 };
