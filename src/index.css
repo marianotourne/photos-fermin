@@ -9,3 +9,12 @@
 .filterSelect {
   @apply relative w-full cursor-context-menu rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-300 text-sm sm:leading-6;
 }
+
+.agu-display-title {
+  font-family: "Agu Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0;
+}
