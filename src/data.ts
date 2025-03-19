@@ -37,6 +37,8 @@ export const images: Image[] = [
 { id: 26, url: 'https://lh3.googleusercontent.com/pw/AP1GczM5NujEHRXhcTale10RrOfejftQrU9eixz7f2js10h25SEvv80birC6OqnyM_W5QCOPIauDHRs_qmMd_58o85MbjBh8s2xzGmL1hr4DOykeGpwiRwbLaJ39Mp78l0vt22MwxVubBAy7aaoSEPJJAB7pzw=w1016-h1360-s-no-gm?authuser=0', year: 2024, month: 10, date:"2024-10-24", description:"Divertido?" },
 { id: 27, url: 'https://lh3.googleusercontent.com/pw/AP1GczO_FzG3g9jNbmBI5gKxHVwtfVvNGrkSa03E7vZBiCKkeAY8Nc5mWdpuIAYM5jGPiPL0v8to0IQtuTI_qpzaGVYPKp__plz_FjFCRMmh9MaHpk3x6JpBrmMlnhQ3G_ZgcayT-YzLzPADQ7F4JE7HMPuNsA=w730-h978-s-no-gm?authuser=0', year: 2024, month: 11, date:"2024-11-04", description:"Modelando en la plaza del tanque" },
 { id: 28, url: 'https://lh3.googleusercontent.com/pw/AP1GczPWQBmekzJCRoUoGJNYZWGwrlDcPpsPRCZLOlqxfKOW2KVLOWNz-2QhFOvzw1c-CBGSI11-cla2tM_F57uWPS3FCnzNdiwHCOsd87TeZPJ-654DVoBz-eUgYeBx-I4e3xpt8NS4h6a5qbX7QbvYV3-rUg=w432-h578-s-no-gm?authuser=0', year: 2024, month: 12, date:"2024-12-23", description:"Comiendo con los patos" },
+{ id: 29, url: 'https://lh3.googleusercontent.com/pw/AP1GczPbyZ2YS9ztK0WVeeAawe8eZeRl2EXR0qHNee-n_Hycw-tKImhwykLwnry9-_dYeStryoNJv0blBp15-hQuEakTj7shGxfpWPD_phI82wNo1IQKtXQGG_Q6xtZpzmkJPFlucpVc12uiAopvDtLyAHmVYw=w812-h1086-s-no-gm?authuser=0', year: 2025, month: 1, date:"2025-01-24", description:"Posando" },
+{ id: 30, url: 'https://lh3.googleusercontent.com/pw/AP1GczMIRbjNppkfpWr-Y_k5M5NhW_hLgRT1NoLE4m_jvCp87rBwy6a-xzZB_RqIwxM5ZeG0KDHHaAcX4QW7xL_-bE9WByD45u8r-mrTESzECgEhDwb2GYZtsiBDLGok7fKj1se8zbfJ87nQmLgDJGBCVBFVcg=w812-h1086-s-no-gm?authuser=0', year: 2025, month: 2, date:"2025-02-01", description:"Pasando la tarde en los pile" },
 ];
 
 export interface Month {
@@ -69,4 +71,5 @@ export const years: Year[] = [
   {id: 2022, year: "2022"},
   {id: 2023, year: "2023"},
   {id: 2024, year: "2024"},
+  {id: 2025, year: "2025"},
 ]
